@@ -11,3 +11,10 @@ showBtn.addEventListener('click', function(){
         showBtn.innerHTML = '<i class = "fas fa-times"></i>';
     }
 });
+
+function validateForm() {
+ personEmail = document.forms['subs']['email'].value;
+   
+ if (personEmail.indexOf('@') == -1){
+    alert("Email must be filled out");
+}
