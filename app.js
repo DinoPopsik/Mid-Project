@@ -13,8 +13,13 @@ showBtn.addEventListener('click', function(){
 });
 
 function validateForm() {
- personEmail = document.forms['subs']['email'].value;
+   personName=document.forms['subs']['email'].value;
+ if (personName == ('')){
+    alert("Email must be filled out!");
+
+ }else personEmail = document.forms['subs']['email'].value;
    
  if (personEmail.indexOf('@') == -1){
     alert("Email must be filled out");
-}
+
+ }
